@@ -7,6 +7,7 @@
 //
 
 #import "TakePhotoViewController.h"
+#import "PhotoDetailViewController.h"
 
 @interface TakePhotoViewController () <UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 
@@ -22,11 +23,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.title = @"Take Photo";
+    self.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Take Photo" image:[UIImage imageNamed:@"camera.png"] tag:0];
     
     UILabel* tapToTake = [[UILabel alloc] initWithFrame:self.view.frame];
-    tapToTake.text = @"Tap disini\nuntuk mengambil gambar!";
+    tapToTake.text = @"Tap to take a photo!";
     tapToTake.textAlignment = NSTextAlignmentCenter;
-    tapToTake.numberOfLines = 0;
+    tapToTake.textColor = [UIColor grayColor];
     [self.view addSubview:tapToTake];
     
     CGSize viewSize = self.view.bounds.size;
@@ -53,7 +55,13 @@
         [self presentViewController:picker animated:YES completion:nil];
     } else {
         // Show details
-        NSLog(@"show details");
+        UIImageView* sender = (UIImageView*)recognizer.view;
+        
+        PhotoDetailViewController* detailVC = [[PhotoDetailViewController alloc] init];
+        UINavigationController* navigation = [[UINavigationController alloc] initWithRootViewController:detailVC];
+        [self presentViewController:navigation animated:YES completion:^{
+            [detailVC setImage:sender.image];
+        }];
     }
 }
 

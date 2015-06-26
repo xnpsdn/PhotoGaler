@@ -10,6 +10,7 @@
 #import "AFNetworking.h"
 #import "MemeData.h"
 #import "GridPictureView.h"
+#import "PhotoDetailViewController.h"
 
 @interface GalleryViewController ()
 
@@ -29,6 +30,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     self.title = @"Gallery";
+    self.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Gallery" image:[UIImage imageNamed:@"gallery.png"] tag:0];
     
     // Create scrollview
     CGSize viewSize = self.view.bounds.size;
@@ -113,7 +115,13 @@
 
 - (void)imageTapped:(UITapGestureRecognizer *)recognizer {
     // Show details
-    NSLog(@"show details %d", recognizer.view.tag);
+    UIImageView* sender = (UIImageView*)recognizer.view;
+    
+    PhotoDetailViewController* detailVC = [[PhotoDetailViewController alloc] init];
+    UINavigationController* navigation = [[UINavigationController alloc] initWithRootViewController:detailVC];
+    [self presentViewController:navigation animated:YES completion:^{
+        [detailVC setImage:sender.image];
+    }];
 }
 
 @end
