@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  GalleryViewController.h
 //  PhotoGaler
 //
 //  Created by Arifin Luthfi P on 26/6/15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface GalleryViewController : UIViewController
 
 @end
-
