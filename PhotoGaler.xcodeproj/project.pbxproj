@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A4F0E261B3D3FD70016ABF9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A4F0E251B3D3FD70016ABF9 /* Default-568h@2x.png */; };
 		3ACAFDD41B3D370E0027917D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ACAFDD31B3D370E0027917D /* main.m */; };
 		3ACAFDD71B3D370E0027917D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ACAFDD61B3D370E0027917D /* AppDelegate.m */; };
 		3ACAFDDA1B3D370E0027917D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ACAFDD91B3D370E0027917D /* ViewController.m */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3A4F0E251B3D3FD70016ABF9 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		3ACAFDCE1B3D370E0027917D /* PhotoGaler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoGaler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3ACAFDD21B3D370E0027917D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3ACAFDD31B3D370E0027917D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 		3ACAFDC51B3D370D0027917D = {
 			isa = PBXGroup;
 			children = (
+				3A4F0E251B3D3FD70016ABF9 /* Default-568h@2x.png */,
 				3ACAFDD01B3D370E0027917D /* PhotoGaler */,
 				3ACAFDEA1B3D370F0027917D /* PhotoGalerTests */,
 				3ACAFDCF1B3D370E0027917D /* Products */,
@@ -200,6 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3ACAFDDD1B3D370E0027917D /* Main.storyboard in Resources */,
+				3A4F0E261B3D3FD70016ABF9 /* Default-568h@2x.png in Resources */,
 				3ACAFDE21B3D370F0027917D /* LaunchScreen.xib in Resources */,
 				3ACAFDDF1B3D370F0027917D /* Images.xcassets in Resources */,
 			);
@@ -344,6 +348,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PhotoGaler/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -354,6 +359,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PhotoGaler/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -412,6 +418,7 @@
 				3ACAFDF31B3D370F0027917D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3ACAFDF41B3D370F0027917D /* Build configuration list for PBXNativeTarget "PhotoGalerTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +427,7 @@
 				3ACAFDF61B3D370F0027917D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
