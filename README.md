@@ -18,13 +18,3 @@ codeblock
 *this is italic*
 
 **this is bold**
-
-1. this
-2. is
-3. ordered
-4. list
-
-- this
-- is
-- unordered
-- list
